@@ -1,0 +1,697 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+   
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	font-family:'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: inherit;
+	color:rgb(49, 46, 46);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-text-stroke: 1px transparent;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+@media (min-width: 1200px){
+	.col-xl-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+/* =======================================================================
+   			HEADER
+   ======================================================================= */
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+#topo{
+	width: 98%;
+}
+
+#topo div{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	padding: 0%;
+}
+
+#ligue{
+	align-items: flex-end;
+}
+#navToggle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.logo {
+	align-items: center;
+}
+	
+.navbar-toggler{
+	display:none;
+}
+
+a.nav-link {
+	color: rgb(49, 46, 46);
+	padding: 0.2rem 0.2rem;
+	margin: 0 1rem;
+}
+
+
+a.nav-link:hover {
+	color: #1e0491;
+}
+			
+.phone-top {
+	background: #005DAB;
+	color: #FFD500;
+	font-weight: 700;
+	text-align: center;
+	font-size: 2em;
+	padding-top: 1.6vh;
+	padding-bottom: 1.6vh;
+}
+
+#ddd{
+	font-size: 0.55em;
+	margin: 0%;
+	padding-top: 0.5%;
+	padding-right: 6%;
+}
+
+.phone-top span {
+	font-size: 0.8em;
+	color:  #FFD500;
+	display: flex;
+	justify-content: center;
+}
+
+.phone-top a {
+	color: #fff;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+	line-height: 1.3em;
+	text-decoration: none;
+}
+.phone-top a:hover {
+	text-decoration: none;
+}
+
+/* =======================================================================
+  			 BANNER TOPO
+   ======================================================================= */
+
+#slideForm{
+	padding-top: 10.5vh;
+	height: 100%;
+}
+
+#id{
+	display: flex;
+	justify-content: left;
+	min-width: 35vw;
+	min-height: 42vw;
+}
+
+.banner {
+	min-width: 100%;
+	background-image: image-set(15000);
+
+}
+
+.slide{
+	display: flex;
+	justify-content: center;
+}
+
+.slide1, .slide2, .slide3{
+	min-width: 100%;
+	display: flex;
+	justify-content: right;
+	align-items: flex-end;
+	flex-flow: row wrap;
+}
+
+.slide1 {
+	animation: fade 23s infinite;
+	-webkit-animation: fade 23s infinite;
+}
+
+.imgSlide{
+	position: absolute;
+	top: 0.5vh;
+	left: -13vw;
+}
+
+
+.slide2 {
+	display: none;
+	animation: fade2 23s infinite;
+	-webkit-animation: fade2 23s infinite;
+}
+
+.slide3{
+	display: none;
+	animation: fade2 23s infinite;
+	-webkit-animation: fade2 23s infinite;
+}
+
+
+.tipoTxt1{
+	font-family: 'Segoe UI' monospace;
+	font-weight: bold; 
+	text-transform: uppercase;
+	font-size: 2.5em;
+	color: rgb(80, 79, 79);
+}
+
+.tipoTxt2{
+	font-family: verdana;
+	font-weight: 200; 
+	text-transform: uppercase;
+	font-size: 2.2em;
+	color: rgb(175, 174, 174);
+}
+
+.tipoTxt3{
+	font-family: tahoma;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: rgb(175, 174, 174);
+}
+
+.tipoTxt4{
+	font-family: tahoma;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #0087F6;
+	font-weight: bold; 
+}
+
+.tipoTxt5{
+	font-family: tahoma;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: rgb(34, 13, 153);
+	font-weight: 900; 
+}
+
+.tipoTxt6{
+	font-family: tahoma;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	color: rgb(34, 13, 153);
+	font-weight: 900; 
+}
+
+#preco{
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.tipoTxt7{
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 0.6em;
+	color: rgb(34, 13, 153);
+}
+
+#content{
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 100%;
+	padding: 0%;
+	margin: 0%;
+}	
+
+.form-top{
+	padding-right: 1vw;
+    height: 100%;
+    min-width: 26.5%;
+}
+
+fieldset{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0087F6;
+	min-height: 100%;
+	min-width: 100%;
+	border: none;
+	margin: 0%;
+}
+
+fieldset h3 {
+	color: #ffffff;
+	font-size: 1.8em;
+	text-align: center;
+	margin-top: 6vh;
+}
+			
+fieldset h4 {
+	color: #ffffff;
+	font-size: 0.9em;
+	text-align: center;
+	padding: 20px 0;
+}
+			
+fieldset input {
+	display: block;
+	width: 80%;
+	height: 40px;
+	margin: 0 auto 30px auto;
+	padding-left: 10px;
+	border: none;
+	border-radius: 5px;
+}
+			
+fieldset button {
+	display: block;
+	background: #FFD500;
+	color: #005DAB;
+	font-weight: 700;
+	border-radius: 5px;
+	padding: 1vh;
+	font-size: 1.5em;
+	text-align: center;
+	width: 60%;
+	margin: 6vh auto 0 auto;
+}
+			
+#logoForm {
+	padding: 6vh 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:  2vh 0 0 12vh;
+}
+
+/*---------------------------------------------------------------------------
+				Sessão de Serviços
+-----------------------------------------------------------------------------*/
+/* .divBorda{	
+	width: 100%;
+} */
+
+/* .divBorda::after{	
+	content: '\00a0';
+	background-image: radial-gradient(at 50% 0, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, transparent 75%);
+	background-size: 100% 5px;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+} */
+
+.sessaoServico{
+	padding: 5% 0 5% 0;
+	display: flex;
+	justify-content: center;
+	box-decoration-break: border-box;
+}
+
+.tipoServico{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}
+
+.tipoServico::after{
+	content: '\00a0';
+	background-image: radial-gradient(at 50% 0, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, transparent 75%);
+	background-size: 100% 5px;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.divContainer{
+	min-width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+
+*, *::before, *::after {
+box-sizing: border-box
+}
+
+.monitora{
+	padding-top: 2%;
+}
+
+#divMonitora{
+display: flex;
+justify-content: center;
+}
+
+#secSolucaoMonitora{
+	padding-top:4%;
+	text-align: center;
+	background-image: url("/img/banner-servicos-adt.jpg");
+	color: #ffffff;
+}
+		
+#secSolucaoMonitora h3 {
+	font-weight: 700;
+}
+
+#secSolucaoMonitora p {
+	padding: 20px;
+}
+
+#secSolucaoMonitora a {
+	font-size: 2em;
+	font-weight: 900;
+	background: #FFD500;
+	color: #005DAB;
+	border-radius: 5px;
+	display:flex;
+	align-items: center;
+	max-width: 20vw;
+	padding: 8px 25px;
+}
+
+.linkCel{
+	display:flex;
+	justify-content: center;
+	align-items: baseline;
+	min-width: 100%;
+}
+
+#tecnologia {
+	padding: 50px 0;
+	text-align: center;
+}
+	
+#tecnologia h3 {
+	font-weight: 700;
+	color: #005DAB;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+#tecnologia h3::after {
+	content: '';
+	position: absolute;
+	z-index: 99;
+	height: 5px;
+	width: 50%;
+	bottom: 0;
+	left: 25%;
+	border-bottom: 2px solid #FFD500;
+}
+
+#tecnologia h4 {
+		text-align: left;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		color: #005DAB;
+		font-size: 1.3em;
+		font-weight: 700;
+}
+
+#tecnologia p {
+	padding: 20px;
+}
+
+#produtoSolucao {
+	padding: 50px 0;
+	text-align: center;
+	background: #F3F5F6;
+}
+
+#produtoSolucao .row:nth-child(1) {
+	margin-bottom: 50px;
+}
+
+#produtoSolucao h3 {
+	font-weight: 700;
+	color: #005DAB;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+#produtoSolucao ::after {
+	content: '';
+	position: absolute;
+	z-index: 99;
+	height: 5px;
+	width: 50%;
+	bottom: 0;
+	left: 25%;
+	border-bottom: 2px solid #FFD500;
+}
+	
+#produtoSolucao h4 {
+	color:#005DAB;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+#produtoSolucao p {
+	padding: 20px;
+	min-height: 150px;
+}
+
+		/* @include media-breakpoint-down(xs) {
+				min-height: auto;
+			} */
+
+#produtoSolucao	a {
+	font-size: 1.2em;
+	font-weight: 600;
+	background: #FFD500;
+	text-align: center;
+	color: #005DAB;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 8px 25px;
+}
+
+		/* @include media-breakpoint-down(xs) {
+				margin-bottom: 60px;
+			} */
+			
+.actions-price {
+	background: #0087F6;
+}	
+				
+.actions-price h2 {
+	font-weight: 600;
+	color: #ffffff;
+	text-align: center;
+	padding: 30px 0;
+	display: block;
+}
+
+.comercial{
+	padding: 80px 0;
+	text-align: center;
+	background: url("/img/banner-empresa-adt.jpg") no-repeat center center;
+}
+
+.comercial h3 {
+	font-weight: 700;
+	color: #005DAB;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.comercial h3::after {
+	content: '';
+	position: absolute;
+	z-index: 99;
+	height: 5px;
+	width: 50%;
+	bottom: 0;
+	left: 25%;
+	border-bottom: 2px solid #FFD500;
+}
+	
+.comercial p {
+	padding: 20px;
+}
+
+.comercial a {
+	background: #0087F6;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 8px 5px;
+	min-width: 200px;
+}
+
+.dispositivo{
+	padding: 80px 0;
+	text-align: center;
+}
+
+.dispositivo h3 {
+	font-weight: 700;
+	color: #005DAB;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.dispositivo h3 ::after {
+	content: '';
+	position: absolute;
+	z-index: 99;
+	height: 5px;
+	width: 50%;
+	bottom: 0;
+	left: 25%;
+	border-bottom: 2px solid #FFD500;
+}
+
+.dispositivo h4 {
+	font-weight: 700;
+	color: #005DAB;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.dispositivo p {
+	padding: 20px;
+}		
+
+.conar-page p {
+	border-top: 1px #cccccc solid;
+	font-size: .6em;
+	line-height: 1.6em;
+	padding-top: 20px;
+}
+
+footer {
+	padding: 30px;
+	text-align: center;
+	position: relative;
+	border-bottom: 10px solid #0087F6;
+	background: #f6f6f6;
+}
+
+#divRef{
+	display: flex;
+	justify-content: center;
+	flex-flow: row;
+	align-content: center;
+}
+
+footer a {
+	color: #5d5d5d;
+	font-size: 0.7em;
+	padding: 0 10px;
+	border-right: 1px solid #5d5d5d;
+}	
+		
+footer a:last-child {
+	border-right: none;
+}
+	
+footer::after {
+	content: '\00a0';
+	background-image: radial-gradient(at 50% 0, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 50%, transparent 75%);
+	background-size: 100% 5px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+footer .phone-bottom {
+	color: #005DAB;
+	font-weight: 700;
+	font-size: 2em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer .phone-bottom span {
+	font-size: 0.8em;
+	color: #005DAB;
+}
+
+footer .phone-bottom a {
+	color: #005DAB;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+	margin-top: -8px;
+	line-height: 1.3em;
+	border-right: none;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+#ligueRodape{
+	padding-bottom: 2%;
+}
+
+  /* menu Hamburguer */
+  @media only screen and (max-width: 700px){
+    .navbar-toggler{
+		display:block;
+	}
+}
+
+/*
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Baloo', cursive;
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Bowlby One', cursive;
+font-family: 'Candal', sans-serif;
+font-family: 'Chonburi', cursive;
+font-family: 'Coda Caption', sans-serif;
+font-family: 'Gidugu', sans-serif;
+font-family: 'Katibeh', cursive;
+font-family: 'Lalezar', cursive;
+font-family: 'Lilita One', cursive;
+font-family: 'Passion One', cursive;
+font-family: 'Ramabhadra', sans-serif;
+font-family: 'Rozha One', serif;
+font-family: 'Sigmar One', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Wendy One', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Squada One', cursive;
+*/
+
