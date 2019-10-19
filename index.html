@@ -1,0 +1,279 @@
+<html lang="pt-br">
+<head>
+    <base href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black|Baloo|Black+Han+Sans|Bowlby+One|Candal|Chonburi|Coda+Caption:800|Gidugu|Katibeh|Lalezar|Lilita+One|Passion+One|Patua+One|Ramabhadra|Rozha+One|Sigmar+One|Squada+One|Staatliches|Wendy+One&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link href="images/im" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <title>ADT</title>
+    <script type="text/javascript">
+    function slide1(){
+    document.getElementById('id').src="img/slidef1.jpeg";
+    setTimeout("slide2()", 6000)
+    }
+    
+    function slide2(){
+    document.getElementById('id').src="img/slidef2.jpeg";
+    setTimeout("slide3()", 6000)
+    }
+    
+    function slide3(){
+    document.getElementById('id').src="img/slidef3.jpeg";
+    setTimeout("slide4()", 6000)
+    }
+
+    function slide4(){
+    document.getElementById('id').src="img/slidef4.jpeg";
+    setTimeout("slide1()", 6000)
+    }
+    </script>
+<body onLoad="slide1()" class="index" id="home">
+        <header>
+            <div id="topo" class="container-fluid">
+                <div class="row">
+                    <div class="logo col-xl-2 col-6">
+                        <a href="./">
+                            <img src="img/logo-adt.png" class="img-fluid" alt="Logo ADT Alarmes" title="ADT Alarmes">
+                        </a>
+                    </div>
+                    <nav id="navToggle"class="nav  collapse navbar-toggleable-sm navbar-expand-lg justify-content-center col-xl-6 col-6">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">☰
+                        </button>
+                        <div class="collapse" id="navbarNavDropdown">
+                            <a class="nav-item nav-link active" href="#home">ADT</a>
+                            <a class="nav-item nav-link" href="#tecnologia">TECNOLOGIA</a>
+                            <a class="nav-item nav-link" href="#produtos-solucoes">PRODUTOS E SOLUÇÕES</a>
+                        </div>
+                    </nav>
+                    <div id="ligue" class="phone-top col-xl-3">
+                        <div class="d-flex justify-content-center aling-items-baseline row">
+                            <div class="col-xl-12"><span class="col-xl-12">LIGUE AGORA!</span></div>
+                            <a href="tel:08002000906" class="col-xl-12"><p id="ddd">(11)</p> 96468 4191</a>				
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <section id="slideForm">
+                <div id="content" class="container-fluid">
+                    <div class="banner">
+                        <div class="row col-xl-9">
+                            <div class="slider">
+                                <div class="slide1">
+                                    <div class="imgSlide">
+                                        <img id="id" alt="Promoção">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="form-top col-xl-2 ml-auto" action="inserir-contato.php" method="post">
+                        <fieldset>
+                            <h3><b>LIGAMOS PARA<br> VOCÊ!</b></h3>
+                            <h4>Receba o Contato de um de Nossos <br> Especialistas em Alarme Monitorado</h4>
+                            <input type="text" name="nome" id="nome" placeholder="Nome" required="">
+                            <input type="text" name="telefone" id="telefone" placeholder="Telefone" title="Informe seu telefone corretamente" x-moz-errormessage="Informe seu telefone corretamente" required="">
+                            <button>ENVIAR</button>
+                            <img id="logoForm"src="img/logo-adt.png" alt="Logo ADT">
+                        </fieldset>
+                    </form>	
+                </div>
+            </section>
+            <div class= "divBorda"></div>
+            <section class="tipoServico">
+                <div class="container-fluid">
+                    <div class="tipoServico sessaoServico">
+                        <div class="divContainer col-xl-6">
+                            <div class="d-flex row">
+                                <div class="col-xl-3">
+                                    <img src="img/icon-casa-adt.png" class="img-fluid mx-auto d-block" alt="">
+                                </div>
+                                <div class="col-xl-9">
+                                    <h2>Residencial</h2>
+                                    <p>Proteja seu lar e sua família</p>
+                                    <a href="javascript:void(0);" data-fancybox="" data-type="iframe" data-src="form-modal.php">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid divContainer col-xl-6">
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <img src="img/icon-empresa-adt.png" class="img-fluid mx-auto d-block" alt="">
+                                </div>
+                                <div class="col-xl-9">
+                                    <h2>Empresarial</h2>
+                                    <p>Tranquilidade e segurança para seu negócio</p>
+                                    <a href="javascript:void(0);" data-fancybox="" data-type="iframe" data-src="form-modal.php">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container-fluid monitora">
+                    <div class="row">
+                        <div id="divMonitora" class="col-xl-6">
+                            <img src="img/img-aplicativo-adt.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-xl-6">
+                            <h3 id="hMonitora">Monitore sua Casa a Distância</h3>
+                            <p>A ADT oferece um sistema de monitoramento completo
+                                para a sua casa ou empresa.<br> Saiba o que está acontecendo
+                                através do aplicativo, a qualquer hora e de qualquer lugar.
+                                Nós cuidamos da sua segurança.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="secSolucaoMonitora">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <img src="img/icon-ideal-para-voce.png" class="img-fluid d-block mx-auto" alt="">
+                            <h3>A ADT tem a Solução de Monitoramento Ideal para Você</h3>
+                            <p>Oferecemos sistemas de monitoramento que se adaptam ao seu ambiente, sem a necessidade de reformas.</p>
+                            <div class="linkCel"><a href="tel:08002000906"><p id="ddd">(11)</p> 96468 4191</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tecnologia">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <h4><img src="img/icon-lider-no-mercado-adt.png" alt="">Líder<br>do Mercado</h4>
+                            <p>Tranquilidade e Confiança reconhecida pelos nossos clientes, a ADT oferece
+                                soluções de monitoramento que se adaptam as necessidades de lares e empresas.
+                            </p>
+                        </div>
+                        <div class="col-xl-4">
+                            <h4><img src="img/icon-melhor-infraestrutura-adt.png" alt="">Melhor<br>Infraestrutura</h4>
+                            <p>Conte com uma equipe técnica preparada,com equipamentos que não necessitam de
+                                cabos, facilitando a sua instalação e isentando obras em seu ambiente.
+                            </p>
+                        </div>
+                        <div class="col-xl-4">
+                            <h4><img src="img/icon-tecnoliga-avancada-adt.png" alt="">Tecnologia<br>Avançada</h4>
+                            <p>Nosso portfólio conta com produtos de alta tecnologia em monitoramento para
+                                oferecer ao mercado toda a tranquilidade que você e sua família merecem e precisam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="produtoSolucao">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h3>Planos Residenciais e Planos Empresariais</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <img src="img/equipamentos-adt-planos.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-xl-3">
+                            <h4>ADT Monitoramento<br>Essencial</h4>
+                            <p>Utilizamos sua linha de telefonia fixa para instalar o
+                                sistema de alarme adaptado às necessidades do seu lar,
+                                monitorado por nossa Central 24 Horas ADT.
+                            </p>
+                            <a href="javascript:void(0);" data-fancybox="" data-type="iframe" data-src="form-modal.php">Saiba Mais</a>
+                        </div>
+                        <div class="col-xl-3">
+                            <h4>ADT Monitoramento<br>Conforto</h4>
+                            <p>Monitoramos sua Residência com Sensor de Movimento e
+                                dispositivos adicionais para seu conforto. Além disso,
+                                você poderá armar e desarmar sua Central de Alarme através do celular.
+                            </p>
+                            <a href="javascript:void(0);" data-fancybox="" data-type="iframe" data-src="form-modal.php">Saiba Mais</a>
+                        </div>
+                        <div class="col-xl-3">
+                            <h4>ADT Monitoramento<br>Foto Verificação</h4>
+                            <p>ADT Monitoramento Foto Verificação inclui sensores com foto, para confirmar a
+                                intrusão e alertar autoridades. Sem disparar o alarme, saiba tudo o que acontece pela internet.
+                            
+                            </p>
+                            <a href="javascript:void(0);" data-fancybox="" data-type="iframe" data-src="form-modal.php">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="actions-price">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h2>PLANOS A PARTIR DE R$72,50 POR 5 MESES*</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="comercial">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <img src="img/icon-empresa-adt.png" alt="">
+                            <h3>Acompanhe seu Negócio com Tranquilidade</h3>
+                            <p>Veja o que está acontecendo, a qualquer hora e em qualquer lugar, na sua
+                                empresa com o ADT Monitoramento Foto Verificação.
+                            </p>
+                            <a href="javascript:void(0);" data-fancybox="" data-type="iframe" data-src="form-modal.php">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="dispositivo">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <h3>Dispositivos ADT com Tecnologia Avançada</h3>
+                            <img src="img/equipamentos-adt-smart-security.jpg" class="img-fluid" alt="">
+                            <h4>Smart Security PM 360</h4>
+                            <p>1 painel de alarme sem fio com módulo GPRS E ETH, 1 sensor de presença, 1 sensor de abertura,<br>
+                                1 controle remoto com botão de ajuda e 1 câmera IP. Serviços inclusos: Monitoramento, Comunicação<br>
+                                Segura, Manutenção do Alarme e Câmera. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="conar-page">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p>Pacote Básico - A partir de R$ 65,00 nos 2 primeiros meses Equipamentos em comodato: 1 painel de alarme sem fio (com teclado, visor, bateria, receptor, sirene integradas com possibilidade de inclusão do módulo ETH), 1 sensor de presença, 1 sensor de abertura e 1 controle remoto com botão de ajuda. Serviços inclusos: monitoramento, checkup, relatório mensal e manutenção de alarme. <br>
+                                Smart Security - A partir de R$ 105,00 nos 2 primeiros meses Equipamentos em comodato: 1 painel de alarme sem fio com módulo GFRS e ETH, 1 sensor de presença, 1 sensor de abertura, 1 controle remoto com botão de ajuda e 1 câmera IP. Serviços inclusos: Monitoramento, Comunicação Segurança, Manutenção de Alarme e Câmera.<br>
+                                Promoção Válida somente para compras no Cartão de Crédito ou Débito Automático. Valor promocional válido durante os 2 primeiros meses, após este período, o valor será integral. Fidelidade de 36 meses. Contrato sujeito a análise de crédito.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row align-items-end">
+                        <div class="col-xl-3">
+                            <img src="/img/logo-adt-agente-autorizado.png" class="img-fluid" alt="">
+                        </div>
+                        <div id="divRef" class="col-xl-6">
+                            <a href="https://www.adt.com.br/politica-de-privacidade" target="_blank">POLÍTICA DE PRIVACIDADE</a>
+                            <a href="https://www.adt.com.br/cookies/" target="_blank">COOKIES</a>
+                            <a href="https://www.adt.com.br/images/uploads/clausulas_contratuais.pdf" target="_blank">CLÁUSULAS CONTRATUAIS</a>
+                        </div>
+                        <div class="phone-bottom col-xl-3">
+                            <div class="row">
+                                <div id="ligueRodape" class="col-xl-12"><span>LIGUE AGORA!</span></div>
+                                <a href="tel:08002000906" class="col-xl-12"><p id="ddd">(11)</p> 96468 4191</a>				
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </body>
+        </html>
